@@ -1,0 +1,36 @@
+Ð? ch?y MySQL và phpMyAdmin trên Ubuntu trên AWS, b?n có th? làm theo các bu?c du?i dây:
+
+Bu?c 1: Cài d?t MySQL
+C?p nh?t h? th?ng: Tru?c tiên, b?n c?n d?m b?o h? th?ng c?a b?n dã du?c c?p nh?t. M? terminal và ch?y l?nh sau:
+
+bash
+Copy
+sudo apt update && sudo apt upgrade -y
+Cài d?t MySQL: Cài d?t MySQL Server:
+
+bash
+Copy
+sudo apt install mysql-server -y
+Kh?i d?ng MySQL: Sau khi cài d?t xong, b?n có th? kh?i d?ng MySQL:
+
+bash
+Copy
+sudo systemctl start mysql
+C?u hình MySQL: Sau khi MySQL du?c cài d?t, b?n nên ch?y l?nh c?u hình b?o m?t:
+
+bash
+Copy
+sudo mysql_secure_installation
+L?nh này s? giúp b?n thi?t l?p m?t kh?u cho MySQL root, lo?i b? các tài kho?n ngu?i dùng không c?n thi?t và b?o m?t h? th?ng.
+
+Ki?m tra MySQL: Ð? ki?m tra xem MySQL có dang ch?y hay không:
+
+bash
+Copy
+sudo systemctl status mysql
+Bu?c 2: Cài d?t phpMyAdmin
+Cài d?t phpMyAdmin: B?n có th? cài d?t phpMyAdmin t? kho ph?n m?m chính th?c c?a Ubuntu:
+
+bash
+Copy
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y

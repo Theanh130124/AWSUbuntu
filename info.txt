@@ -1,0 +1,6 @@
+
+cd /var/www/html
+
+echo "<?php" > info.php
+echo "<phpinfo();" >> info.php
+echo "<?>" >> info.php
